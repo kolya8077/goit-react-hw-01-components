@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kolya8077/goit-react-hw-01-components.git/static/css/main.7acaea2f.css",
-    "main.js": "/kolya8077/goit-react-hw-01-components.git/static/js/main.07d3183d.js",
+    "main.css": "/kolya8077/goit-react-hw-01-components.git/static/css/main.88bd0ff5.css",
+    "main.js": "/kolya8077/goit-react-hw-01-components.git/static/js/main.9df8ac48.js",
     "index.html": "/kolya8077/goit-react-hw-01-components.git/index.html",
-    "main.7acaea2f.css.map": "/kolya8077/goit-react-hw-01-components.git/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/kolya8077/goit-react-hw-01-components.git/static/js/main.07d3183d.js.map"
+    "main.88bd0ff5.css.map": "/kolya8077/goit-react-hw-01-components.git/static/css/main.88bd0ff5.css.map",
+    "main.9df8ac48.js.map": "/kolya8077/goit-react-hw-01-components.git/static/js/main.9df8ac48.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.88bd0ff5.css",
+    "static/js/main.9df8ac48.js"
   ]
 }
