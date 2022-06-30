@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+  background-color: #dbdbdb;
+}
+
+.statistics {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.statList {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}

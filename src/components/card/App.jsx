@@ -1,6 +1,6 @@
-import user from 'components/card/user';
+import user from 'components/Card/user';
 import Profile from './index';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Card = () => {
   return (
@@ -15,13 +15,13 @@ export const Card = () => {
 };
 
 Profile.propTypes = {
-  avatar: propTypes.string.isRequired,
-  username: propTypes.string.isRequired,
-  tag: propTypes.string.isRequired,
-  location: propTypes.string.isRequired,
-  stats: propTypes.shape({
-    followers: propTypes.number.isRequired,
-    views: propTypes.number.isRequired,
-    likes: propTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
