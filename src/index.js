@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/card/App';
+import { Card } from 'components/card/App';
+// import { Staic } from 'components/static/App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <div className="conteiner">
+      <Card />
+      {/* <Staic /> */}
+    </div>
   </React.StrictMode>
 );

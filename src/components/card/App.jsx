@@ -1,8 +1,8 @@
-import user from 'components/user';
-import Profile from '.';
+import user from 'components/card/user';
+import Profile from './index';
 import propTypes from 'prop-types';
 
-export const App = () => {
+export const Card = () => {
   return (
     <Profile
       username={user.username}
@@ -19,5 +19,9 @@ Profile.propTypes = {
   username: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
-  stats: propTypes.object.isRequired,
+  stats: propTypes.shape({
+    followers: propTypes.number.isRequired,
+    views: propTypes.number.isRequired,
+    likes: propTypes.number.isRequired,
+  }),
 };
