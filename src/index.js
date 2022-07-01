@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Card } from 'components/Card/App';
 import { Statis } from 'components/Statistics/App';
+import { Friends } from 'components/Friends/App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -9,6 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <div className="conteiner">
       <Card />
       <Statis />
+      <Friends />
     </div>
   </React.StrictMode>
 );

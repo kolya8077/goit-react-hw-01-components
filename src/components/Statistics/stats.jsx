@@ -4,8 +4,10 @@ export const Statistics = ({ events }) => {
   return (
     <ul className={css.statList}>
       {events.map(event => (
-        <li className={css.item}
+        <li
+          className={css.item}
           key={event.id}
+          style={{ backgroundColor: `${randomColor}` }}
         >
           <span className="label">{event.label}</span>
           <span className="percentage">{event.percentage}</span>
