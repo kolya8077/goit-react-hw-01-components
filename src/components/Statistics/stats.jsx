@@ -1,19 +1,17 @@
-import css from './style.module.css';
+import { StatList, StatItem } from 'components/Statistics/Statistic.styled';
 
 export const Statistics = ({ events }) => {
   return (
-    <ul className={css.statList}>
+    <StatList>
       {events.map(event => (
-        <li
-          className={css.item}
+        <StatItem
           key={event.id}
-          style={{ backgroundColor: `${randomColor}` }}
         >
           <span className="label">{event.label}</span>
           <span className="percentage">{event.percentage}</span>
-        </li>
+        </StatItem>
       ))}
-    </ul>
+    </StatList>
   );
 };
 

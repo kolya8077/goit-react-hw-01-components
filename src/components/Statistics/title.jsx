@@ -1,6 +1,6 @@
-import css from "./style.module.css"
+// import css from "./style.module.css"
 
-export const TextTitle = ({ title }) => {
-  return <h2 className={css.title}>{title}</h2>;
-};
+// export const TextTitle = ({ title }) => {
+//   return <h2 className={css.title}>{title}</h2>;
+// };
 

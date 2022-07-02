@@ -1,15 +1,15 @@
 import data from 'components/Statistics/data';
-import { Statistics } from './stats';
-import { TextTitle } from './title';
+import { Statistics } from 'components/Statistics/stats';
+import { TextTitle } from 'components/Statistics/Statistic.styled';
 import PropTypes from 'prop-types';
 
-import css from './style.module.css';
+import css from 'components/Statistics/style.module.css';
 
 export const Statis = () => {
   return (
     <section className={css.container}>
       <div className={css.statistics}>
-        <TextTitle title="Upload stats" />
+        <TextTitle>{'Upload stats'}</TextTitle>
         <Statistics events={data} />
       </div>
     </section>
