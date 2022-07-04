@@ -10,7 +10,7 @@ import {
   Label,
 } from 'components/Card/card.styled';
 
-export default function Profile({ avatar, username, tag, location, stats }) {
+export const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
     <ProfileCard>
       <Description>
