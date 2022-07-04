@@ -1,18 +1,20 @@
 import data from 'components/Statistics/data';
 import { Statistics } from 'components/Statistics/stats';
-import { TextTitle } from 'components/Statistics/Statistic.styled';
+import {
+  TextTitle,
+  Container,
+  Statistic,
+} from 'components/Statistics/Statistic.styled';
 import PropTypes from 'prop-types';
-
-import css from 'components/Statistics/style.module.css';
 
 export const Statis = () => {
   return (
-    <section className={css.container}>
-      <div className={css.statistics}>
+    <Container>
+      <Statistic>
         <TextTitle>{'Upload stats'}</TextTitle>
         <Statistics events={data} />
-      </div>
-    </section>
+      </Statistic>
+    </Container>
   );
 };
 
@@ -29,3 +31,4 @@ Statistics.propTypes = {
     })
   ),
 };
+
