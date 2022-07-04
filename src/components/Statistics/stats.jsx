@@ -3,10 +3,10 @@ import { StatList, StatItem } from 'components/Statistics/Statistic.styled';
 export const Statistics = ({ events }) => {
   return (
     <StatList>
-      {events.map(event => (
-        <StatItem key={event.id} style={{ background: getRandomHexColor() }}>
-          <span className="label">{event.label}</span>
-          <span className="percentage">{event.percentage}</span>
+      {events.map(({ id, label, percentage }) => (
+        <StatItem key={id} style={{ background: getRandomHexColor() }}>
+          <span className="label">{label}</span>
+          <span className="percentage">{percentage}</span>
         </StatItem>
       ))}
     </StatList>

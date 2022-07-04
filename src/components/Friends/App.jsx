@@ -8,7 +8,7 @@ export const Friends = () => {
 
 FriendList.propTypes = {
   events: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
