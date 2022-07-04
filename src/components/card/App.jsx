@@ -1,5 +1,5 @@
 import user from 'components/Card/user';
-import Profile from './index';
+import { Profile } from 'components/Card/index';
 import PropTypes from 'prop-types';
 
 export const Card = () => {

@@ -1,31 +1,39 @@
-import css from './style.module.css';
+import {
+  ProfileCard,
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  List,
+  Label,
+} from 'components/Card/card.styled';
 
 export default function Profile({ avatar, username, tag, location, stats }) {
-return (
-    <div className={css.profile}>
-      <div className={css.description}>
-      <img src={avatar} alt={username} className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+  return (
+    <ProfileCard>
+      <Description>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-      <ul className={css.stats}>
-        <li className={css.list}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
-        </li>
-        <li className={css.list}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
-        </li>
-        <li className={css.list}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <List>
+          <Label>Followers</Label>
+          <span>{stats.followers}</span>
+        </List>
+        <List>
+          <Label>Views</Label>
+          <span>{stats.views}</span>
+        </List>
+        <List>
+          <Label>Likes</Label>
+          <span>{stats.likes}</span>
+        </List>
+      </Stats>
+    </ProfileCard>
   );
 }
-
-

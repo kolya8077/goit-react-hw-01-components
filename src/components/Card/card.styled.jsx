@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const ProfileCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +8,9 @@
   width: 700px;
   height: 700px;
   background-color: #dbdbdb;
-}
+`;
 
-.description {
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,40 +20,42 @@
   height: 300px;
   border: 1px solid #ccc;
   box-shadow: inset 1px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   border-radius: 50%;
   width: 100px;
   height: 100px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   padding: 15px 0px 15px 0px;
   font-size: 25px;
   font-weight: 700;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
   padding-bottom: 10px;
-}
-
-.tag,
-.location {
   font-size: 15px;
   font-weight: 500;
   color: #888585;
-}
+`;
 
-.stats {
+export const Location = styled.p`
+  font-size: 15px;
+  font-weight: 500;
+  color: #888585;
+`;
+
+export const Stats = styled.ul`
   display: flex;
   list-style: none;
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-}
+`;
 
-.list {
+export const List = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,13 +63,13 @@
   width: 100px;
   height: 100px;
   background-color: #f3f3f3;
-}
 
-.list:not(:last-child) {
-  border-right: 1px solid #ccc;
-}
+  :not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+`;
 
-.label {
+export const Label = styled.span`
   padding-bottom: 5px;
   color: #888585;
-}
+`;
