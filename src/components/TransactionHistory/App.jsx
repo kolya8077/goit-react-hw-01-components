@@ -1,6 +1,5 @@
-import data from 'components/TransactionHistory/transactions';
+import data from 'data/transactions';
 import { Body } from 'components/TransactionHistory/TransactionHistory';
-import PropTypes from 'prop-types';
 
 
 
@@ -10,13 +9,3 @@ export const TransactionHistory = () => {
   )
 }
 
-Body.propTypes = {
-  events: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    })
-  ),
-};

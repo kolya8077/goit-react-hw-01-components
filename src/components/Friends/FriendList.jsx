@@ -1,5 +1,7 @@
 import { Item } from 'components/Friends/Friends.style';
 import { FaCircle } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+
 
 export const FriendList = ({ events }) => {
   return (
@@ -24,3 +26,14 @@ function colorAdd(isOnline) {
   }
   return 'red';
 }
+
+FriendList.propTypes = {
+  events: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};

@@ -6,6 +6,8 @@ import {
   ItemTd,
   ItemTr,
 } from 'components/TransactionHistory/TransactionHistory.styled';
+import PropTypes from 'prop-types';
+
 
 export const Body = ({ events }) => {
   return (
@@ -29,4 +31,15 @@ export const Body = ({ events }) => {
       </tbody>
     </Table>
   );
+};
+
+Body.propTypes = {
+  events: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
 };

@@ -1,4 +1,4 @@
-import data from 'components/Statistics/data';
+import data from 'data/data';
 import { Statistics } from 'components/Statistics/stats';
 import {
   TextTitle,
@@ -6,6 +6,7 @@ import {
   Statistic,
 } from 'components/Statistics/Statistic.styled';
 import PropTypes from 'prop-types';
+
 
 export const Statis = () => {
   return (
@@ -22,13 +23,5 @@ TextTitle.prototype = {
   text: PropTypes.string.isRequired,
 };
 
-Statistics.propTypes = {
-  events: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    })
-  ),
-};
+
 
