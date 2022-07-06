@@ -1,21 +1,33 @@
-import { StatList, StatItem } from 'components/Statistics/Statistic.styled';
 import PropTypes from 'prop-types';
-
+import {
+  StatList,
+  StatItem,
+  TextTitle,
+  ContainerSt,
+  Statistic,
+} from 'components/Statistics/Statistic.styled';
 
 export const Statistics = ({ events }) => {
   return (
-    <StatList>
-      {events.map(({ id, label, percentage }) => (
-        <StatItem key={id} style={{ background: getRandomHexColor() }}>
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-        </StatItem>
-      ))}
-    </StatList>
+    <ContainerSt>
+      <Statistic>
+          <TextTitle>{'Upload stats'}</TextTitle>
+        <StatList>
+          {events.map(({ id, label, percentage }) => (
+            <StatItem key={id} style={{ background: getRandomHexColor() }}>
+              <span className="label">{label}</span>
+              <span className="percentage">{percentage}</span>
+            </StatItem>
+          ))}
+        </StatList>
+      </Statistic>
+    </ContainerSt>
   );
 };
 
-
+TextTitle.prototype = {
+  text: PropTypes.string.isRequired,
+};
 
 Statistics.propTypes = {
   events: PropTypes.arrayOf(

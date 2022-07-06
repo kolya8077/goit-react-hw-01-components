@@ -9,7 +9,7 @@ import {
 import PropTypes from 'prop-types';
 
 
-export const Body = ({ events }) => {
+export const TransactionHistory = ({ events }) => {
   return (
     <Table>
       <TitleTr>
@@ -21,7 +21,7 @@ export const Body = ({ events }) => {
       </TitleTr>
 
       <tbody>
-        {events.map(({ id,type,amount,currency }) => (
+        {events.map(({ id, type, amount, currency }) => (
           <ItemTr key={id}>
             <ItemTd>{type}</ItemTd>
             <ItemTd>{amount}</ItemTd>
@@ -33,7 +33,7 @@ export const Body = ({ events }) => {
   );
 };
 
-Body.propTypes = {
+TransactionHistory.propTypes = {
   events: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,

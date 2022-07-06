@@ -1,17 +1,27 @@
+import { Profile } from 'components/Card/Profile';
+import { Statistics } from 'components/Statistics/stats';
+import { FriendList } from 'components/Friends/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import { Container } from './App.styled';
 
-import { Card } from 'components/Card/App';
-import { Statis } from 'components/Statistics/App';
-import { Friends } from 'components/Friends/App';
-import { TransactionHistory } from 'components/TransactionHistory/App';
-
+import friends from 'data/friends';
+import user from 'data/user';
+import data from 'data/data';
+import transactions from 'data/transactions';
 
 export const App = () => {
   return (
-    <div className="conteiner">
-      <Card />
-      <Statis />
-      <Friends />
-      <TransactionHistory />
-    </div>
+    <Container>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics events={data} />
+      <FriendList events={friends} />
+      <TransactionHistory events={transactions} />
+    </Container>
   );
 };

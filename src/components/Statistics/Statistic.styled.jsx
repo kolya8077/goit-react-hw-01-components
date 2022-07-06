@@ -24,7 +24,7 @@ export const StatItem = styled.li`
   /* background-color: #${Math.floor(Math.random() * 16777215).toString(16)}; */
 `;
 
-export const Container = styled.section`
+export const ContainerSt = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
