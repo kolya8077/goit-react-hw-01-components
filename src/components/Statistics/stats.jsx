@@ -8,7 +8,7 @@ import {
 } from 'components/Statistics/Statistic.styled';
 
 
-export const Statistics = ({ title = 'Upload stats', events }) => {
+export const Statistics = ({ title, events }) => {
   return (
     <ContainerSt>
       <Statistic>

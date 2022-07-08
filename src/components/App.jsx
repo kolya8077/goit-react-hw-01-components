@@ -1,4 +1,4 @@
-import { Profile } from 'components/Card/Profile';
+import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/stats';
 import { FriendList } from 'components/Friends/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
@@ -19,7 +19,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics events={data} />
+      <Statistics title="Upload stats" events={data} />
       <FriendList events={friends} />
       <TransactionHistory events={transactions} />
     </Container>
