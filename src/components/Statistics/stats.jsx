@@ -26,10 +26,6 @@ export const Statistics = ({ title, events }) => {
   );
 };
 
-TextTitle.prototype = {
-  text: PropTypes.string.isRequired,
-};
-
 Statistics.propTypes = {
   events: PropTypes.arrayOf(
     PropTypes.exact({
