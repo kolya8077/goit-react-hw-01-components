@@ -8,7 +8,7 @@ import {
   Stats,
   List,
   Label,
-} from 'components/Card/card.styled';
+} from 'components/Card/profile.styled';
 import PropTypes from 'prop-types';
 
 

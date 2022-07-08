@@ -10,7 +10,7 @@ export const FriendList = ({ events }) => {
         <Item key={id}>
           isOnline={isOnline}
           <span>
-            <FaCircle style={{ color: colorAdd(isOnline) }} />
+            <FaCircle style={{ color: isOnline ? 'green' : 'red' }} />
           </span>
           <img className="avatar" src={avatar} alt={name} width="48" />
           <p className="name">{name}</p>
@@ -20,12 +20,6 @@ export const FriendList = ({ events }) => {
   );
 };
 
-function colorAdd(isOnline) {
-  if (isOnline) {
-    return 'green';
-  }
-  return 'red';
-}
 
 FriendList.propTypes = {
   events: PropTypes.arrayOf(

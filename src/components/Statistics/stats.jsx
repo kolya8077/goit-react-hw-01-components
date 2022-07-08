@@ -7,11 +7,12 @@ import {
   Statistic,
 } from 'components/Statistics/Statistic.styled';
 
-export const Statistics = ({ events }) => {
+
+export const Statistics = ({ title = 'Upload stats', events }) => {
   return (
     <ContainerSt>
       <Statistic>
-          <TextTitle>{'Upload stats'}</TextTitle>
+        {title && <TextTitle>{title}</TextTitle>}
         <StatList>
           {events.map(({ id, label, percentage }) => (
             <StatItem key={id} style={{ background: getRandomHexColor() }}>
